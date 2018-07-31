@@ -13,16 +13,16 @@ export const addTask = (task) => ({
 });
 
 
-export const inputTest = (task) => ({
+export const inputTest = (test) => ({
   type: 'INPUT_TEST',
   payload: {
-    task
+    test
   }
 });
 
-export const addTest = (task) => ({
+export const addTest = (test) => ({
   type: 'ADD_TEST',
   payload: {
-    task
+    test
   }
 });

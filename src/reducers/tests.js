@@ -1,6 +1,6 @@
 const initialState = {
-  task: '',
-  tasks: []
+  test: '',
+  tests: []
 };
 
 export default function testsReducer(state = initialState, action) {
@@ -13,7 +13,7 @@ export default function testsReducer(state = initialState, action) {
     case 'ADD_TEST':
       return {
         ...state,
-        tests: state.tasks.concat([action.payload.test])
+        tests: state.tests.concat([action.payload.test])
       };
     default:
       return state;

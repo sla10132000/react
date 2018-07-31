@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createBrowserHistory from 'history/createBrowserHistory';
 import TodoApp from './containers/TodoApp';
-import Test from './containers/Test';
+import TestApp from './containers/TestApp';
 import Error from './components/Error';
 import createStore from './store';
 
@@ -21,7 +21,7 @@ render(
       <div>
         {/* ルーティングさせる */}
         <Route exact path="/" component={TodoApp} />
-        <Route exact path="/test" component={Test} />
+        <Route exact path="/test" component={TestApp} />
         <Route path="/error" component={Error} />
       </div>
     </ConnectedRouter>

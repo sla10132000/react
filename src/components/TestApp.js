@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function TodoApp({ test, tests, inputTask, addTask, redirectToError }) {
+export default function TodoApp({ test, tests, inputTest, addTest, redirectToError }) {
   return (
     <div>
-      <input type="text" onChange={(e) => inputTask(e.target.value)} />
-      <input type="button" value="add" onClick={() => addTask(test)} />
+      <input type="text" onChange={(e) => inputTest(e.target.value)} />
+      <input type="button" value="add" onClick={() => addTest(test)} />
       <ul>
         {
           tests.map(function(item, i) {

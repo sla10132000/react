@@ -1,21 +1,21 @@
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import Test from '../components/Test';
+import TestApp from '../components/TestApp';
 import { inputTest, addTest } from '../actions/tasks';
 
 function mapStateToProps(state) {
   return {
-    task: state.tasks.task,
-    tasks: state.tasks.tasks
+    test: state.tests.test,
+    tests: state.tests.tests
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    addTask(test) {
+    addTest(test) {
       dispatch(addTest(test));
     },
-    inputTask(test) {
+    inputTest(test) {
       dispatch(inputTest(test))
     },
     redirectToError() {
@@ -24,4 +24,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Test);
+export default connect(mapStateToProps, mapDispatchToProps)(TestApp);
