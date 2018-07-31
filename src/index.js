@@ -21,7 +21,7 @@ render(
       <div>
         {/* ルーティングさせる */}
         <Route exact path="/" component={TodoApp} />
-        <Route exact path="/" component={Test} />
+        <Route exact path="/test" component={Test} />
         <Route path="/error" component={Error} />
       </div>
     </ConnectedRouter>

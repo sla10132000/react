@@ -4,8 +4,8 @@ import {
   combineReducers,
   applyMiddleware
 } from 'redux';
-import { routerReducer, routerMiddleware } from 'C:/Users/Administrator/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react-router-redux';
-import logger from 'C:/Users/Administrator/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/redux-logger';
+import { routerReducer, routerMiddleware } from 'react-router-redux';
+import logger from 'redux-logger';
 import tasksReducer from '../reducers/tasks';
 //import testsReducer from '../reducers/tests';
 
@@ -14,7 +14,6 @@ export default function createStore(history) {
   return reduxCreateStore(
     combineReducers({
       tasks: tasksReducer,
-//      tests: testsReducer,
       // react-router-reduxのReducer
       router: routerReducer,
     }),

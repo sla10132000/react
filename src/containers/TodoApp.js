@@ -20,6 +20,9 @@ function mapDispatchToProps(dispatch) {
     },
     redirectToError() {
       dispatch(push('/error'));
+    },
+    redirectToTest() {
+      dispatch(push('/test'));
     }
   };
 }
